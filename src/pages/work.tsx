@@ -1,7 +1,9 @@
-import React from 'react'
+import WorkIntroduction from '../components/work-introduction'
 
 export default function Work() {
     return (
-        <div>Work</div>
+        <div className='w-[1024px] mt-32'>
+            <WorkIntroduction />
+        </div>
     )
 }
