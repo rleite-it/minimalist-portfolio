@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <image id="Background" width="64" height="64" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAqUlEQVR4nO3QgQ0AMQyDwHz33zmvTgFSuQmwv93dedh5efzVAYIGVAcIGlAdIGhAdYCgAdUBggZUBwgaUB0gaEB1gKAB1QGCBlQHCBpQHSBoQHWAoAHVAYIGVAcIGlAdIGhAdYCgAdUBggZUBwgaUB0gaEB1gKAB1QGCBlQHCBpQHSBoQHWAoAHVAYIGVAcIGlAdIGhAdYCgAdUBggZUBwgaUB0gaODMzA9VOgR8F5U4SQAAAABJRU5ErkJggg=="/>
+  <path id="rl." class="cls-1" d="M19.925,46.75v-13a11.27,11.27,0,0,1,.625-4.025A6.2,6.2,0,0,1,22.3,27.15a7,7,0,0,1,2.575-1.375,10.8,10.8,0,0,1,3.05-.425h1.55v-4.4a13.031,13.031,0,0,0-4.275.65A9.178,9.178,0,0,0,22,23.45a9.743,9.743,0,0,0-2.175,2.9l-0.3-4.8h-3.8v25.2h4.2Zm18.5,0v-36h-4.2v36h4.2Zm10.5-.575a2.963,2.963,0,0,0,0-4.05,2.732,2.732,0,0,0-2.05-.825,2.813,2.813,0,0,0-2.075.825,2.9,2.9,0,0,0,0,4.05A2.813,2.813,0,0,0,46.875,47,2.732,2.732,0,0,0,48.925,46.175Z"/>
+</svg>
