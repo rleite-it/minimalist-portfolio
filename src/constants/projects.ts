@@ -18,4 +18,13 @@ export const PROJECTS: ProjectProps[] = [
 		preview: "./src/assets/projects-preview/ama/create-room.png",
 		wip: false,
 	},
+	{
+		id: "02",
+		name: "MINIMALIST PORTFOLIO",
+		description:
+			"Minimalist portfolio built with React. Focused on optimizing performance and seamless user experience.",
+		stack: "Developed with React and styled with TailwindCSS.",
+		preview: "./src/assets/projects-preview/minimalist-portfolio/work.png",
+		wip: true,
+	},
 ];
