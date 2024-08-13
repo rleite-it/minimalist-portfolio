@@ -31,7 +31,7 @@ export default function Navbar() {
         <nav className='py-12 max-w-[1024px] w-full flex justify-between items-baseline'>
             <span className='text-4xl'>rl.</span>
 
-            <ul className='flex gap-20'>
+            <ul className='flex gap-16'>
                 {NAV_ITEMS.map((item) => <NavItem key={item.key} item={item.value} path={item.path} />)}
             </ul>
         </nav>
