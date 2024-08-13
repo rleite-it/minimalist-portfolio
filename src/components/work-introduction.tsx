@@ -7,7 +7,7 @@ export default function WorkIntroduction() {
                 <h1 className='max-w-[300px] font-medium text-5xl'>Hello, I'm Ricardo Leite.</h1>
                 <span className='pt-12 w-[550px] text-lg text-zinc-500'>A mid-level frontend developer specializing in React, committed to building seamless, user-focused web experiences.</span>
             </div>
-            <ArrowDown className='size-9 hover:cursor-pointer' />
+            <ArrowDown className='size-9 cursor-pointer' />
         </div>
     )
 }
