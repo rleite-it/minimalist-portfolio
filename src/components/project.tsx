@@ -10,9 +10,9 @@ export default function Project({ id, name, description, stack, preview, wip }: 
                 <h1 className="font-semibold text-lg">{id} / {name}</h1>
                 <p className="font-medium ">{description}</p>
                 <p className="text-justify pr-20 text-zinc-500 flex-1">{stack}</p>
-                <TextLink text="More about this project" icon={<ArrowUpRight className="size-5" />} wip={wip} />
+                <TextLink text={wip ? "Project WIP" : "More about this project"} icon={!wip ? <ArrowUpRight className="size-5" /> : <></>} wip={wip} />
             </div>
-            <img src={preview} alt={`project ${name} preview`} className="w-[550px] h-[325px] ml-auto" />
+            <img src={preview} alt={`project ${name} preview`} className="w-[500px] h-[325px] ml-auto aspect-video" />
         </div>
     )
 }
