@@ -11,7 +11,7 @@ export default function Footer() {
                     </Link>
                 </li>
                 <li>
-                    <Link target="_blank" to="https://github.com/rleite-it">
+                    <Link target="_blank" to="https://www.linkedin.com/in/ricardo-leite-it/">
                         Linkedin
                     </Link>
                 </li>
