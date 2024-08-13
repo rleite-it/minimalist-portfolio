@@ -12,7 +12,7 @@ export default function Work() {
     };
 
     return (
-        <div className='w-[1024px] mt-32'>
+        <div className='w-[1024px] mt-32 flex flex-col flex-1'>
             <WorkIntroduction onScrollToTarget={handleScroll} />
             <Projects ref={projectsRef} />
         </div>
