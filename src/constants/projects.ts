@@ -4,6 +4,7 @@ export interface ProjectProps {
 	description: string;
 	stack: string;
 	preview: string;
+	repository?: string;
 	wip: boolean;
 }
 
@@ -16,6 +17,7 @@ export const PROJECTS: ProjectProps[] = [
 		stack:
 			"Developed with Go and React, styled with TailwindCSS, containerized using Docker.",
 		preview: "./src/assets/projects-preview/ama/create-room.png",
+		repository: "https://github.com/rleite-it/ask-me-anything",
 		wip: false,
 	},
 	{
@@ -25,6 +27,7 @@ export const PROJECTS: ProjectProps[] = [
 			"Minimalist portfolio built with React. Focused on optimizing performance and seamless user experience.",
 		stack: "Developed with React and styled with TailwindCSS.",
 		preview: "./src/assets/projects-preview/minimalist-portfolio/work.png",
+		repository: "https://github.com/rleite-it/minimalist-portfolio",
 		wip: true,
 	},
 ];

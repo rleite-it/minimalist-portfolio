@@ -26,7 +26,7 @@ const Projects = forwardRef((_props, ref) => {
         <div ref={targetRef} className="w-full flex flex-col pt-8">
             {PROJECTS.map((project) => (
                 <>
-                    <Project key={`project-${project.id}`} id={project.id} name={project.name} description={project.description} stack={project.stack} preview={project.preview} wip={project.wip} />
+                    <Project key={`project-${project.id}`} id={project.id} name={project.name} description={project.description} stack={project.stack} preview={project.preview} wip={project.wip} repository={project.repository} />
                     <div className="mt-20 h-[.25px] bg-[#181717]" />
                 </>
             ))}
