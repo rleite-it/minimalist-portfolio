@@ -33,3 +33,8 @@ body::-webkit-scrollbar-thumb {
 		scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 	}
 }
+
+img {
+	z-index: 100;
+	cursor: default;
+}
