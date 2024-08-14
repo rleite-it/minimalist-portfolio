@@ -12,11 +12,11 @@ export default function AboutIntroduction() {
                 </div>
                 <div className="flex flex-col w-full gap-20">
                     <div className="flex gap-8 items-start">
-                        <TextLink text="Main Skills" className="min-w-[150px] cursor-text" />
+                        <TextLink text="Main Skills" className="min-w-[150px] cursor-none" />
                         <p className="flex-1">{SKILLS.join(", ")}</p>
                     </div>
                     <div className="flex gap-8 items-start">
-                        <TextLink text="Main Software" className="min-w-[150px] cursor-text" />
+                        <TextLink text="Main Software" className="min-w-[150px] cursor-none" />
                         <p className="flex-1">{SOFTWARE.join(", ")}</p>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ import TextLink from "./text-link";
 
 export default function Project({ id, name, description, stack, preview, wip }: ProjectProps) {
     return (
-        <div className="mt-20 w-full flex cursor-default">
+        <div className="mt-20 w-full flex">
             <div className="flex flex-col gap-6 pr-32">
                 <h1 className="font-semibold text-lg">{id} / {name}</h1>
                 <p className="font-medium ">{description}</p>
