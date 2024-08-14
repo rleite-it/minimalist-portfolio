@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import ResumeModal from "./resume-modal";
+import { useState } from "react";
 
 export default function AboutContactInfo() {
+    const [visible, setVisible] = useState<boolean>(false);
+
+    const handleOpen = () => setVisible(true);
+
+    const handleClose = () => setVisible(false);
+
     return (
         <div className="w-full flex justify-between pr-20 mb-16">
             <h2 className="font-medium text-xl">
@@ -15,8 +23,9 @@ export default function AboutContactInfo() {
             </h2>
             <div className="flex flex-col gap-4 pt-4">
                 <Link to="mailto:ricardo.leite.developer@gmail.com" className="font-medium text-xl">ricardo.leite.developer@gmail.com</Link>
-                <p className="text-sm cursor-pointer">View Resume</p>
+                <p className="text-sm cursor-pointer" onClick={handleOpen}>View Resume</p>
             </div>
+            <ResumeModal visible={visible} onClose={handleClose} />
         </div>
     );
 }
