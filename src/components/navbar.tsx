@@ -14,16 +14,6 @@ const NAV_ITEMS: Array<{
     key: "about",
     value: "About",
     path: "/about"
-},
-{
-    key: "playground",
-    value: "Playground",
-    path: "/playground"
-},
-{
-    key: "contact",
-    value: "Contact",
-    path: "/contact"
 }];
 
 export default function Navbar() {
