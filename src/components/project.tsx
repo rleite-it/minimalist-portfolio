@@ -12,7 +12,7 @@ export default function Project({ id, name, description, stack, preview, wip, re
                 <p className="text-justify pr-20 text-zinc-500 flex-1">{stack}</p>
                 <TextLink text={wip ? "Project WIP" : "More about this project"} icon={!wip ? <ArrowUpRight className="size-5" /> : <></>} link={repository} wip={wip} />
             </div>
-            <img src={preview} alt={`project ${name} preview`} className="w-[500px] h-[325px] ml-auto aspect-video" />
+            <img src={preview} alt={`project ${name} preview`} className="w-[500px] h-[325px] ml-auto aspect-video" loading="lazy" />
         </div>
     )
 }
