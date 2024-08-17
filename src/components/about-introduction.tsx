@@ -21,7 +21,7 @@ export default function AboutIntroduction() {
                     </div>
                 </div>
             </div>
-            <img src="./src/assets/landscape.webp" alt="about landscape image" className="w-[625px] h-[490px]" loading="lazy" />
+            <img src="./landscape.webp" alt="about landscape image" className="w-[625px] h-[490px]" loading="lazy" />
         </div>
     )
 }
