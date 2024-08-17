@@ -30,7 +30,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
       <main className="h-screen flex flex-col items-center px-4">
         <Cursor />
         <RouterProvider router={router} />
