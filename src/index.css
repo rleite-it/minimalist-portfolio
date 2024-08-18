@@ -5,52 +5,52 @@
 @tailwind utilities;
 
 :root {
-	font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
-	--sb-track-color: #fafafa;
-	--sb-thumb-color: #181717;
-	--sb-size: 9px;
+  --sb-track-color: #fafafa;
+  --sb-thumb-color: #181717;
+  --sb-size: 9px;
 }
 
 body::-webkit-scrollbar {
-	width: var(--sb-size);
+  width: var(--sb-size);
 }
 
 body::-webkit-scrollbar-track {
-	background: var(--sb-track-color);
-	border-radius: 50px;
+  background: var(--sb-track-color);
+  border-radius: 50px;
 }
 
 body::-webkit-scrollbar-thumb {
-	background: var(--sb-thumb-color);
-	border-radius: 50px;
+  background: var(--sb-thumb-color);
+  border-radius: 50px;
 }
 
 @supports not selector(::-webkit-scrollbar) {
-	body {
-		scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
-	}
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
 }
 
 img {
-	z-index: 100;
-	cursor: default;
+  z-index: 100;
+  cursor: default;
 }
 
 #wave {
-	stroke-dasharray: 0 16 101 16;
-	animation: moveTheWave 2400ms linear infinite;
+  stroke-dasharray: 0 16 101 16;
+  animation: moveTheWave 2400ms linear infinite;
 }
 
 @keyframes moveTheWave {
-	0% {
-		stroke-dashoffset: 0;
-		transform: translate3d(0, 0, 0);
-	}
-	100% {
-		stroke-dashoffset: -133;
-		transform: translate3d(-90px, 0, 0);
-	}
+  0% {
+    stroke-dashoffset: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: -133;
+    transform: translate3d(-90px, 0, 0);
+  }
 }

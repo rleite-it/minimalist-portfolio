@@ -1,11 +1,11 @@
 import { lazy } from "react";
 import { Worker } from "@react-pdf-viewer/core";
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import AppLayout from "./layouts/app-layout"
+import AppLayout from "./layouts/app-layout";
 import Cursor from "./components/cursor";
 
-import '@react-pdf-viewer/core/lib/styles/index.css';
+import "@react-pdf-viewer/core/lib/styles/index.css";
 
 const Work = lazy(() => import("./pages/work.tsx"));
 const About = lazy(() => import("./pages/about.tsx"));
@@ -17,15 +17,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Work />
+        element: <Work />,
       },
       {
         path: "/about",
-        element: <About />
-      }
+        element: <About />,
+      },
     ],
     errorElement: <Error />,
-  }
+  },
 ]);
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
         <RouterProvider router={router} />
       </main>
     </Worker>
-  )
+  );
 }
 
 export default App;

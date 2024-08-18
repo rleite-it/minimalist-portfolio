@@ -6,28 +6,30 @@ import ResumeModal from "./resume-modal";
 import { EMAIL } from "../constants/about-info";
 
 export default function AboutContactInfo() {
-    const [visible, setVisible] = useState<boolean>(false);
+  const [visible, setVisible] = useState<boolean>(false);
 
-    const handleOpen = () => setVisible(true);
+  const handleOpen = () => setVisible(true);
 
-    const handleClose = () => setVisible(false);
+  const handleClose = () => setVisible(false);
 
-    return (
-        <div className="w-full flex justify-between pr-20 mb-16">
-            <h2 className="font-medium text-xl">
-                <span>
-                    I am thrilled to answer to
-                </span>
-                <span className="flex items-center">
-                    your next project
-                    <ArrowRight className="ml-2 flex-shrink-0 size-6" />
-                </span>
-            </h2>
-            <div className="flex flex-col gap-4 pt-4">
-                <Link to={`mailto:${EMAIL}`} className="font-medium text-xl">{EMAIL}</Link>
-                <p className="text-sm cursor-pointer" onClick={handleOpen}>View Resume</p>
-            </div>
-            <ResumeModal visible={visible} onClose={handleClose} />
-        </div>
-    );
+  return (
+    <div className="w-full flex justify-between pr-20 mb-16">
+      <h2 className="font-medium text-xl">
+        <span>I am thrilled to answer to</span>
+        <span className="flex items-center">
+          your next project
+          <ArrowRight className="ml-2 flex-shrink-0 size-6" />
+        </span>
+      </h2>
+      <div className="flex flex-col gap-4 pt-4">
+        <Link to={`mailto:${EMAIL}`} className="font-medium text-xl">
+          {EMAIL}
+        </Link>
+        <p className="text-sm cursor-pointer" onClick={handleOpen}>
+          View Resume
+        </p>
+      </div>
+      <ResumeModal visible={visible} onClose={handleClose} />
+    </div>
+  );
 }
