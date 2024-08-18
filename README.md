@@ -1,50 +1,93 @@
-# React + TypeScript + Vite
+# Minimalist Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-v19.0.0-61DAFB?style=flat&logo=react)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v3.0.0-38B2AC?style=flat&logo=tailwind-css)
+![Lucide-React](https://img.shields.io/badge/Lucide--React-v0.1.0-333333?style=flat&logo=lucide)
+![GSAP](https://img.shields.io/badge/GSAP-v3.0.0-88CE02?style=flat&logo=greensock)
+![PDF.js](https://img.shields.io/badge/PDF.js-v3.4.120-FFB100?style=flat&logo=adobe-acrobat-reader)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Minimalist Portfolio** is a personal portfolio website built to showcase your projects, skills, and professional experience. This responsive and interactive site is designed with a clean and minimalist aesthetic, ensuring a focus on content. It is built using the latest version of React, styled with TailwindCSS for an elegant design, and animated with GSAP for smooth and engaging user interactions. The Lucide-React icon library is used for modern, scalable icons that blend seamlessly with the design. Additionally, `pdfjs-dist` is integrated to allow users to preview their resume directly on the website.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Responsive Design**: Optimized for various screen sizes and devices.
+- **Smooth Animations**: Enhance user experience with GSAP-driven animations.
+- **Modular Components**: Reusable and organized codebase for easy maintenance.
+- **Interactive UI**: User-friendly and intuitive navigation with smooth transitions.
+- **PDF Preview**: Users can preview their resumes directly on the site using `pdfjs-dist`.
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React v19**: A JavaScript library for building user interfaces.
+- **TailwindCSS**: A utility-first CSS framework for rapid UI development.
+- **Lucide-React**: A collection of simple and consistent icons for React.
+- **GSAP**: A powerful JavaScript library for creating high-performance animations.
+- **pdfjs-dist**: A distribution of the PDF.js library for rendering PDFs.
+
+## Installation
+
+To get started with the project locally, follow these steps:
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js**: v14.0 or higher
+- **npm**
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/rleite-it/minimalist-portfolio.git
+cd minimalist-portfolio
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Install Dependenccies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install -f
 ```
+
+### Start the Application
+
+```bash
+npm run dev
+```
+
+Visit http://localhost:5173 to view the application in your browser.
+
+### Build
+
+```bash
+npm run build
+```
+
+### Preview Build
+
+```bash
+npm run preview
+```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+### Fix Lint
+
+```bash
+npm run lint:fix
+```
+
+### Prettier
+
+```bash
+npm run format
+```
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the [LICENSE](./LICENSE) file for details.
