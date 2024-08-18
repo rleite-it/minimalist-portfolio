@@ -1,7 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+
 import ResumeModal from "./resume-modal";
-import { useState } from "react";
 
 export default function AboutContactInfo() {
     const [visible, setVisible] = useState<boolean>(false);

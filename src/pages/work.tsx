@@ -2,8 +2,12 @@ import { useRef } from 'react';
 import Projects from '../components/projects'
 import WorkIntroduction from '../components/work-introduction'
 
+interface ProjectRefProps {
+    scrollToTarget: () => void;
+}
+
 export default function Work() {
-    const projectsRef = useRef<any>(null);
+    const projectsRef = useRef<ProjectRefProps | null>(null);
 
     const handleScroll = () => {
         if (projectsRef.current) {

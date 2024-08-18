@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 export default function Cursor() {
-    const cursorRef = useRef(null);
+    const cursorRef = useRef<HTMLDivElement | null>(null);
 
     useGSAP(() => {
         const cursor = cursorRef.current;

@@ -36,7 +36,11 @@ export default function GoToTop() {
 
 
     return (
-        <div ref={divRef} className='fixed bottom-5 right-5 size-12 bg-zinc-950 rounded-lg flex items-center justify-center cursor-pointer opacity-0 scale-75' onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+        <div
+            ref={divRef}
+            className='fixed bottom-5 right-5 size-12 bg-zinc-950 rounded-lg flex items-center justify-center cursor-pointer opacity-0 scale-75'
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
             <ArrowUp className='text-white size-7' />
         </div>
     )

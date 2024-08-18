@@ -1,7 +1,7 @@
 export default function Loading() {
-    const m = 0.512286623256592433;
+    const m: number = 0.512286623256592433;
 
-    function buildWave(w: number, h: number) {
+    function buildWave(w: number, h: number): string {
         const a = h / 4;
         const y = h / 2;
 

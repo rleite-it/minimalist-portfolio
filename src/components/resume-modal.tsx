@@ -1,8 +1,8 @@
+import { useEffect } from "react";
 import Rodal from "rodal";
 import { Viewer } from "@react-pdf-viewer/core";
 
 import 'rodal/lib/rodal.css';
-import { useEffect } from "react";
 
 interface ResumeModalProps {
     visible: boolean;

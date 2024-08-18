@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import TextLink from "../components/text-link";
 import { ArrowUpRight } from "lucide-react";
+
+import TextLink from "../components/text-link";
 
 export default function Error() {
     return (
