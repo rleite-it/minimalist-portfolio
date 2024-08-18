@@ -27,7 +27,6 @@ export default function Cursor() {
         <div
             ref={cursorRef}
             className="fixed top-[-30px] left-[-30px] w-16 h-16 pointer-events-none z-50 mix-blend-difference"
-            style={{ pointerEvents: 'none' }}
         >
             <svg width="100%" height="100%">
                 <circle cx="50%" cy="50%" r="25%" fill="white" />
