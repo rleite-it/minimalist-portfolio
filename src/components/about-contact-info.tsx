@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 import ResumeModal from "./resume-modal";
+import { EMAIL } from "../constants/about-info";
 
 export default function AboutContactInfo() {
     const [visible, setVisible] = useState<boolean>(false);
@@ -23,7 +24,7 @@ export default function AboutContactInfo() {
                 </span>
             </h2>
             <div className="flex flex-col gap-4 pt-4">
-                <Link to="mailto:ricardo.leite.developer@gmail.com" className="font-medium text-xl">ricardo.leite.developer@gmail.com</Link>
+                <Link to={`mailto:${EMAIL}`} className="font-medium text-xl">{EMAIL}</Link>
                 <p className="text-sm cursor-pointer" onClick={handleOpen}>View Resume</p>
             </div>
             <ResumeModal visible={visible} onClose={handleClose} />

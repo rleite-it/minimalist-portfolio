@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { GITHUB_LINK, LINKEDIN_LINK } from "../constants/socials";
 
 export default function Footer() {
     return (
@@ -6,12 +7,12 @@ export default function Footer() {
             <span className="text-zinc-500">Design credits - <Link to="https://www.figma.com/@feyza" className="underline transition-colors hover:text-zinc-950" target="_blank">Feyza Okumus</Link></span>
             <ul className="flex gap-16 font-semibold">
                 <li>
-                    <Link target="_blank" to="https://github.com/rleite-it">
+                    <Link target="_blank" to={GITHUB_LINK}>
                         Github
                     </Link>
                 </li>
                 <li>
-                    <Link target="_blank" to="https://www.linkedin.com/in/ricardo-leite-it/">
+                    <Link target="_blank" to={LINKEDIN_LINK}>
                         Linkedin
                     </Link>
                 </li>
